@@ -8,3 +8,9 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
