@@ -1,17 +1,23 @@
-let img1 = document.querySelectorAll(".card-img-top");
-let h51 = document.querySelectorAll(".card-title");
-let parrafo1 = document.querySelectorAll(".card-text");
+let h1 = document.querySelector(".title");
+h1.innerHTML = "Productos";
+let contenedor = document.querySelector(".container");
 
-img1[0].src = "https://i.redd.it/wxb33zg5lk561.jpg";
-h51[0].textContent = "GOKU";
-parrafo1[0].textContent = "Soy un ser proveniente del planeta vegeta Fui criado en la tierra obteniendo fuerza infinita Con mi ki te mandaré volando como una dinamita Has encontrado un enemigo peor que la criptonita";
+let arr = [];
 
-img1[1].src = "https://cdn.elcocinerocasero.com/imagen/receta/1200/2024-02-01-20-03-28/milanesa-de-ternera-a-la-napolitana.jpeg";
-h51[1].textContent = "MILANESA";
-parrafo1[1].textContent = "La milanesa es un filete, normalmente de carne vacuna, empanado, el cual se cocina frito o al horno";
+for (let i = 1; i <= 9; i++) {
+    arr.push(`
+        <div class="card">
+  <img src="https://66d9ee6caa07a954166f10ed--gregarious-melba-cacdba.netlify.app/${i}.jpg" class="card-img-top" alt="Auto">
+  <div class="card-body">
+    <h5 class="card-title">Card ${i}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+`);
+}
 
-img1[2].src = "https://m.media-amazon.com/images/I/81i+hA9UVdL._AC_SL1500_.jpg";
-h51[2].textContent = "TINKIWINKI";
-parrafo1[2].textContent = "Dios omnipotente creador de el cielo y la tierra";
+contenedor.innerHTML = arr.join(``);
+
 
 
