@@ -8,8 +8,18 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
-    gap: 20px;
+    gap: 35px;
     width: 100%;
+    margin: 0 0 30px 0;
+}
+
+
+.card{
+    transition: transform 1s;
+}
+
+.card:hover{
+    transform: scale(1.02);
 }
 
 .card-img-top {
@@ -18,12 +28,11 @@ body{
     height: 100%;
 }
 
-.card{
-    background-color: red;
-}
+
 
 .title{
     text-align: center;
+    margin: 10px;
 }
 
 @media (width < 800px){
@@ -32,3 +41,13 @@ body{
     }
 }
 
+main{
+    width: fit-content;
+    margin: auto;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
