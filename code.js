@@ -1,4 +1,4 @@
-let h1 = document.querySelector(".title");
+let h1 = document.querySelector("h1");
 h1.innerHTML = "Productos";
 let contenedor = document.querySelector(".container");
 
