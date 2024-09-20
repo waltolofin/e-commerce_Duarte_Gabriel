@@ -3,6 +3,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    height: 100vh;
 }
 
 .container{
@@ -28,6 +29,15 @@ body{
     height: 100%;
 }
 
+.main-producto{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.cards-productos{
+    width: 900px;
+}
 
 
 h1{
@@ -50,6 +60,7 @@ h1{
 main{
     width: fit-content;
     margin: auto;
+    height: 100%;
 }
 
 .anton-regular {
