@@ -3,9 +3,8 @@ body{
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    height: 100vh;
 }
-
+/*Contenedor de las cards*/
 .container{
     display: grid;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
@@ -13,8 +12,15 @@ body{
     width: 100%;
     margin: 0 0 30px 0;
 }
+/*Main*/
+main{
+    width: fit-content;
+    margin: auto;
+    height: 100%;
+}
 
-
+/*Cards styles*/
+/*Cada card individual*/
 .card{
     transition: transform 1s;
 }
@@ -22,7 +28,7 @@ body{
 .card:hover{
     transform: scale(1.02);
 }
-
+/*Imagen*/
 .card-img-top {
     object-fit: cover;
     width: 100%;
@@ -39,12 +45,13 @@ align-items: center;
     width: 900px;
 }
 
-
+/*Tittle style*/
 h1{
     text-align: center;
     margin: 10px;
 }
 
+/*Media queries*/
 @media (width < 1200px){
     .container{
         grid-template-columns: repeat(2, minmax(150px, 1fr))
@@ -57,14 +64,49 @@ h1{
     }
 }
 
-main{
-    width: fit-content;
-    margin: auto;
-    height: 100%;
-}
+
+
+/*Font*/
 
 .anton-regular {
     font-family: "Anton", sans-serif;
     font-weight: bold;
     font-style: normal;
 }
+
+/*Products styles*/
+.precio{
+    color: rgb(35, 172, 35);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.lineaInferior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.pProducto{
+    font-size: 25px;
+}
+
+.cardProducto{
+    margin: 0 0 0 30px;
+    display: flex;
+    transition: transform 1s;
+}
+
+.cardProducto:hover{
+    transform: scale(1.005);
+}
+
+.body-products{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+
