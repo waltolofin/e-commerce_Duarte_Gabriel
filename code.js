@@ -4,7 +4,7 @@ const data = [
     title: "Bloody Angels (1732 Høtten: Marerittet har et postnummer)",
     detail:
       "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-    img: "http://dummyimage.com/450x300.png/5fa2dd/ffffff",
+    img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
     price: 7,
     stock: 100,
     category: "Toyota",
@@ -14,7 +14,7 @@ const data = [
     title: "Ski Patrol",
     detail:
       "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
-    img: "http://dummyimage.com/450x300.png/cc0000/ffffff",
+    img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
     price: 5,
     stock: 73,
     category: "BMW",
@@ -24,7 +24,7 @@ const data = [
     title: "Ladybird Ladybird",
     detail:
       "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-    img: "http://dummyimage.com/450x300.png/5fa2dd/ffffff",
+    img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
     price: 48,
     stock: 99,
     category: "Ford",
@@ -34,7 +34,7 @@ const data = [
     title: "Cannonball Run II",
     detail:
       "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-    img: "http://dummyimage.com/450x300.png/dddddd/000000",
+    img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
     price: 27,
     stock: 91,
     category: "Ford",
@@ -44,7 +44,7 @@ const data = [
     title: "Looking for Mr. Goodbar",
     detail:
       "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-    img: "http://dummyimage.com/450x300.png/ff4444/ffffff",
+    img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
     price: 5,
     stock: 49,
     category: "Mercury",
@@ -54,7 +54,7 @@ const data = [
     title: "White Night Wedding (Brúðguminn)",
     detail:
       "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-    img: "http://dummyimage.com/450x300.png/ff4444/ffffff",
+    img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
     price: 2,
     stock: 73,
     category: "Saturn",
@@ -64,7 +64,7 @@ const data = [
     title: "Godzilla vs. Megalon (Gojira tai Megaro)",
     detail:
       "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-    img: "http://dummyimage.com/450x300.png/cc0000/ffffff",
+    img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
     price: 55,
     stock: 5,
     category: "Lexus",
@@ -74,7 +74,7 @@ const data = [
     title: "Big Doll House, The",
     detail:
       "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
-    img: "http://dummyimage.com/450x300.png/5fa2dd/ffffff",
+    img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
     price: 47,
     stock: 39,
     category: "Nissan",
@@ -84,7 +84,7 @@ const data = [
     title: "Stars and Stripes Forever",
     detail:
       "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-    img: "http://dummyimage.com/450x300.png/ff4444/ffffff",
+    img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
     price: 26,
     stock: 80,
     category: "Toyota",
@@ -94,7 +94,7 @@ const data = [
     title: "Plato's Academy",
     detail:
       "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-    img: "http://dummyimage.com/450x300.png/ff4444/ffffff",
+    img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
     price: 19,
     stock: 69,
     category: "Mercedes-Benz",
@@ -104,7 +104,7 @@ const data = [
     title: "Winter's Bone",
     detail:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
-    img: "http://dummyimage.com/450x300.png/ff4444/ffffff",
+    img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
     price: 35,
     stock: 72,
     category: "Honda",
@@ -114,7 +114,7 @@ const data = [
     title: "Pirates of the Caribbean: At World's End",
     detail:
       "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-    img: "http://dummyimage.com/450x300.png/cc0000/ffffff",
+    img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
     price: 52,
     stock: 76,
     category: "Lotus",
@@ -126,7 +126,7 @@ function cards() {
   h1.innerHTML = "Productos";
   let contenedor = document.querySelector(".container");
   const card = data.map((car)=>`<div class="card" id="${car.id}" >
-  <img src="https://66d9ee6caa07a954166f10ed--gregarious-melba-cacdba.netlify.app/${car.img}.jpg" class="card-img-top" alt="Auto">
+  <img src="${car.img}" class="card-img-top" alt="Auto">
   <div class="card-body">
     <h5 class="card-title">Card ${car.title}</h5>
     <p class="card-text">${car.detail}</p>
