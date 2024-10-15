@@ -9,14 +9,14 @@ let html;
 if (producto) {
    html = `
         <div class="card cardProducto">
-        <img src="${producto.img}" class="card-img-top">
+        <img src="${producto.img}" class="card-img-top" id="producto-img">
         <div class="card-body">
             <h2 class="card-title h2productos">${producto.title}</h2>
             <p class="card-text">${producto.detail}</p>
             <div class = "lineaInferior">
             <button class ="btn btn-success btnProducto">Comprar</button>
-            <p class="card-text precio">${producto.price}</p>
-            <p class="card-text pProducto">${producto.stock}</p>
+            <p class="card-text precio">$${producto.price}</p>
+            <p class="card-text pProducto">Stock: <b>${producto.stock}</b></p>
             </div>
         </div>
         </div>

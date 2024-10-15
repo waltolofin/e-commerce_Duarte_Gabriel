@@ -1,123 +1,123 @@
 const data = [
-    {
-      id: 1,
-      title: "Bloody Angels (1732 Høtten: Marerittet har et postnummer)",
-      detail:
-        "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-      img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
-      price: 7,
-      stock: 100,
-      category: "Toyota",
-    },
-    {
-      id: 2,
-      title: "Ski Patrol",
-      detail:
-        "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
-      img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
-      price: 5,
-      stock: 73,
-      category: "BMW",
-    },
-    {
-      id: 3,
-      title: "Ladybird Ladybird",
-      detail:
-        "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-      img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
-      price: 48,
-      stock: 99,
-      category: "Ford",
-    },
-    {
-      id: 4,
-      title: "Cannonball Run II",
-      detail:
-        "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-      img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
-      price: 27,
-      stock: 91,
-      category: "Ford",
-    },
-    {
-      id: 5,
-      title: "Looking for Mr. Goodbar",
-      detail:
-        "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-      img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
-      price: 5,
-      stock: 49,
-      category: "Mercury",
-    },
-    {
-      id: 6,
-      title: "White Night Wedding (Brúðguminn)",
-      detail:
-        "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-      img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
-      price: 2,
-      stock: 73,
-      category: "Saturn",
-    },
-    {
-      id: 7,
-      title: "Godzilla vs. Megalon (Gojira tai Megaro)",
-      detail:
-        "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-      img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
-      price: 55,
-      stock: 5,
-      category: "Lexus",
-    },
-    {
-      id: 8,
-      title: "Big Doll House, The",
-      detail:
-        "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
-      img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
-      price: 47,
-      stock: 39,
-      category: "Nissan",
-    },
-    {
-      id: 9,
-      title: "Stars and Stripes Forever",
-      detail:
-        "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-      img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
-      price: 26,
-      stock: 80,
-      category: "Toyota",
-    },
-    {
-      id: 10,
-      title: "Plato's Academy",
-      detail:
-        "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-      img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
-      price: 19,
-      stock: 69,
-      category: "Mercedes-Benz",
-    },
-    {
-      id: 11,
-      title: "Winter's Bone",
-      detail:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
-      img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
-      price: 35,
-      stock: 72,
-      category: "Honda",
-    },
-    {
-      id: 12,
-      title: "Pirates of the Caribbean: At World's End",
-      detail:
-        "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-      img: "https://sublitextil.com.ar/wp-content/uploads/2019/01/Remera-sublimar-hombre-.jpg",
-      price: 52,
-      stock: 76,
-      category: "Lotus",
-    },
-  ];
+  {
+    id: 1,
+    title: "Ángeles Ensangrentados - Remera de colección",
+    detail:
+      "Remera de algodón suave con estampado de colección. Corte regular y costuras reforzadas para mayor durabilidad. Ideal para uso diario y para lucir un estilo único.",
+    img: "https://images.pexels.com/photos/8472743/pexels-photo-8472743.jpeg?auto=compress&cs=tinysrgb&w=500",
+    price: 7,
+    stock: 100,
+    category: "T-shirt",
+  },
+  {
+    id: 2,
+    title: "Patrulla de Esquí - Camiseta deportiva",
+    detail:
+      "Camiseta ideal para deportes de invierno. Confeccionada con material transpirable que ayuda a mantener la comodidad y frescura. Perfecta para combinar con otros artículos de ropa deportiva.",
+    img: "https://images.pexels.com/photos/6311396/pexels-photo-6311396.jpeg?auto=compress&cs=tinysrgb&w=500",
+    price: 5,
+    stock: 73,
+    category: "T-shirt",
+  },
+  {
+    id: 3,
+    title: "Ladybird Ladybird - Remera casual",
+    detail:
+      "Remera casual de uso diario, hecha de algodón y con un diseño moderno. Comodidad garantizada, ideal para cualquier ocasión casual o para salir con amigos.",
+    img: "https://images.pexels.com/photos/3650484/pexels-photo-3650484.jpeg?auto=compress&cs=tinysrgb&w=500",
+    price: 48,
+    stock: 99,
+    category: "T-shirt",
+  },
+  {
+    id: 4,
+    title: "Cannonball Run II - Jeans clásicos",
+    detail:
+      "Jeans de corte clásico, confeccionados con mezclilla de alta calidad. Ofrecen comodidad y estilo. Perfectos para combinar con cualquier camiseta o camisa.",
+    img: "https://images.pexels.com/photos/1138322/pexels-photo-1138322.jpeg?auto=compress&cs=tinysrgb&w=500",
+    price: 27,
+    stock: 91,
+    category: "Jeans",
+  },
+  {
+    id: 5,
+    title: "Buscando a Mr. Goodbar - Jeans cómodos",
+    detail:
+      "Jeans cómodos y flexibles, ideales para el uso diario. Con bolsillos frontales y traseros para mayor funcionalidad. Ajuste perfecto y estilo casual.",
+    img: "https://images.pexels.com/photos/2421373/pexels-photo-2421373.jpeg?auto=compress&cs=tinysrgb&w=500",
+    price: 5,
+    stock: 49,
+    category: "Jeans",
+  },
+  {
+    id: 6,
+    title: "Boda en la Noche Blanca - Jeans de verano",
+    detail:
+      "Jeans ligeros y frescos, diseñados especialmente para el verano. Tejido suave y cómodo, con un diseño moderno que se adapta a cualquier look casual.",
+    img: "https://images.pexels.com/photos/5081386/pexels-photo-5081386.jpeg?auto=compress&cs=tinysrgb&w=500",
+    price: 2,
+    stock: 73,
+    category: "Jeans",
+  },
+  {
+    id: 7,
+    title: "Godzilla vs. Megalon - Jeans exclusivos",
+    detail:
+      "Jeans exclusivos con un estilo único, perfectos para quienes buscan diferenciarse. Confección de alta calidad, ideales para combinar con camisetas de moda.",
+    img: "https://images.pexels.com/photos/1488466/pexels-photo-1488466.jpeg?auto=compress&cs=tinysrgb&w=500",
+    price: 55,
+    stock: 5,
+    category: "Jeans",
+  },
+  {
+    id: 8,
+    title: "La Casa de las Muñecas - Zapatillas urbanas",
+    detail:
+      "Zapatillas urbanas con un diseño moderno. Suela antideslizante y materiales duraderos para mayor comodidad y resistencia en el día a día.",
+    img: "https://images.pexels.com/photos/2529146/pexels-photo-2529146.jpeg?auto=compress&cs=tinysrgb&w=500",
+    price: 47,
+    stock: 39,
+    category: "Sneakers",
+  },
+  {
+    id: 9,
+    title: "Estrellas y Rayas Para Siempre - Zapatillas clásicas",
+    detail:
+      "Zapatillas de estilo clásico y atemporal. Ideales para cualquier ocasión, con un diseño versátil y cómodo. Suela resistente y detalles de alta calidad.",
+    img: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=500",
+    price: 26,
+    stock: 80,
+    category: "Sneakers",
+  },
+  {
+    id: 10,
+    title: "Academia de Platón - Zapatillas cómodas",
+    detail:
+      "Zapatillas diseñadas para brindar la máxima comodidad. Suela acolchada y plantilla ergonómica. Perfectas para el uso diario y para caminar largas distancias.",
+    img: "https://images.pexels.com/photos/1032119/pexels-photo-1032119.jpeg?auto=compress&cs=tinysrgb&w=500",
+    price: 19,
+    stock: 69,
+    category: "Sneakers",
+  },
+  {
+    id: 11,
+    title: "Hueso de Invierno - Zapatillas deportivas",
+    detail:
+      "Zapatillas deportivas de alta resistencia, diseñadas para soportar largas jornadas de ejercicio. Ligeras y transpirables, con excelente amortiguación.",
+    img: "https://images.pexels.com/photos/4399201/pexels-photo-4399201.jpeg?auto=compress&cs=tinysrgb&w=500",
+    price: 35,
+    stock: 72,
+    category: "Sneakers",
+  },
+  {
+    id: 12,
+    title: "Piratas del Caribe: Al Fin del Mundo - Zapatillas elegantes",
+    detail:
+      "Zapatillas elegantes y de estilo único. Diseño sofisticado con detalles exclusivos. Ideales para combinar con atuendos casuales y elegantes.",
+    img: "https://images.pexels.com/photos/2765170/pexels-photo-2765170.jpeg?auto=compress&cs=tinysrgb&w=500",
+    price: 52,
+    stock: 76,
+    category: "Sneakers",
+  },
+];
 
