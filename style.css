@@ -3,6 +3,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    min-height: 100vh;
 }
 /*Contenedor de las cards*/
 .container{
@@ -16,7 +17,7 @@ body{
 main{
     width: fit-content;
     margin: auto;
-    height: 100%;
+    min-height: calc(100vh - 120px);
 }
 
 /*Cards styles*/
@@ -117,3 +118,30 @@ h1{
 #producto-img{
     max-height: 700px;
 }
+
+/* Caso de no encontrar cards */
+.p-noencontrado{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.13);
+    width: 100%;
+    left: 0;
+    bottom: 40%;
+}
+
+.p-noencontrado p{
+    max-width: 400px;
+    text-align: center;
+}
+
+/* icono */
+.material-symbols-outlined {
+    font-size: 5em;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
