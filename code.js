@@ -5,12 +5,21 @@
 //Usamos cada uno de los objetos de data para armar cards en el html
 function mapear(objmapear) {
     let card = objmapear.map((car)=>`<div class="card" id="${car.id}" >
+    <a href="producto.html?prod=${car.id}" class="cardRef">
+  <div class="img-container">
   <img src="${car.img}" class="card-img-top" alt="${car.title}">
+  </div>
   <div class="card-body">
+  <div class="title-text-container">
     <h5 class="card-title">${car.title}</h5>
     <p class="card-text">${car.detail}</p>
-    <a href="producto.html?prod=${car.id}" class="btn btn-primary">Ver más</a>
+    </div>
+    <div class="stock-precio-container">
+      <p class="card-text precio precio-card-index">$${car.price}</p>
+      <p class="card-text code-stock"><b>Stock:</b>${car.stock}</p>
+    </div>
   </div>
+  </a>
 </div>`);
 contenedor.innerHTML = card.join('');
   }
