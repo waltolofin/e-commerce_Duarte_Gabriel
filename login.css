@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+   }
+
+   .card{
+    padding: 20px;
+   }
+
+   .error-container{
+    display: none;
+    color: #f00;
+    font-weight: bold;
+    font-size: 15px;
+   }
+
+
+   .material-symbols-outlined {
+    font-size: 5em;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
