@@ -5,7 +5,19 @@ body {
    }
 
    .card{
+    position: relative;
     padding: 20px;
+    min-width: 300px;
+    min-height: 450px;
+   }
+   .card::after{
+    content: "\f2bb"; /* Código del icono (puede variar según el icono) */
+    position: absolute;
+    display: block;
+    top: 5px; /* Ajusta la posición vertical */
+    right: 5px; /* Ajusta la posición horizontal */
+    font-family: 'Material Icons';
+    font-size: 24px; /* Ajusta el tamaño del icono */
    }
 
    .error-container{
@@ -23,5 +35,10 @@ body {
     'wght' 400,
     'GRAD' 0,
     'opsz' 24
+  }
+
+
+#submit-button{
+    width: 100%;
   }
 

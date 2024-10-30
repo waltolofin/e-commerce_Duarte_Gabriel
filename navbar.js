@@ -36,7 +36,7 @@ let nav = `<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse div-navbar" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -52,15 +52,17 @@ let nav = `<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="
               </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="input-value">
-  <button class="btn btn-outline-success" id="filter-button" type="button">Search</button>
-  <button class="btn btn-outline-secondary" id="clear-button" type="button">
-    <i class="bi bi-x-circle"></i>
-  </button>
-</form>
+          <ul class='navbar-nav session'>${
+            localStorage.getItem('email')?`<li class="email-li" id="li-nav">Bienvenido ${localStorage.getItem('email').split('@')[0]}</li><li id="li-nav"><img height="25" src="./cart.png" alt="comprar"><b id=quantity>${localStorage.getItem("quantity")}</b></li><li id="li-nav" onclick="logout()" class="logout-li">Cerrar sesión</li>`
+            : `<li><a class="nav-link" href="./login.html">Iniciar sesión</a></li>`
+          }</ul>
         </div>
       </div>
     </nav>`;
 
+const logout=()=>{
+  localStorage.clear();
+  window.location.href = "./login.html";
+}
+  
 header.innerHTML = nav;

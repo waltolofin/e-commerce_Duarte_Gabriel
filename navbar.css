@@ -1,0 +1,30 @@
+.session{
+    color:#fff;
+    display: flex;
+    align-items: center;
+}
+
+.logout-li{
+    cursor: pointer;
+}
+.logout-li:hover{
+    color: rgb(215, 103, 103);
+}
+
+.email-li{
+    margin-right: 25px;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right, #FF7F50, #D4AF37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.div-navbar{
+    justify-content: space-around;
+}
+
+#li-nav{
+    margin-right: 15px;
+}

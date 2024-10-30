@@ -1,34 +1,70 @@
 
 
-let id = window.location.search.split("=")[1];
+let idProducto = window.location.search.split("=")[1];
 
-const producto = data.find((product)=>product.id==id);
+const producto = data.find((product)=>product.id==idProducto);
 
-let html;
+
 
 if (producto) {
-   html = `
-        <div class="card cardProducto">
+    let html = `
+        <div class="card" id="cardProducto">
         <img src="${producto.img}" class="card-img-top" id="producto-img">
         <div class="card-body">
-            <h2 class="card-title h2productos">${producto.title}</h2>
+            <div class="texto">
+            <h2 class="card-title">${producto.title}</h2>
             <p class="card-text">${producto.detail}</p>
+            </div>
             <div class = "lineaInferior">
-            <button class ="btn btn-success btnProducto">Comprar</button>
             <p class="card-text precio">$${producto.price}</p>
             <p class="card-text pProducto">Stock: <b>${producto.stock}</b></p>
             </div>
+            ${
+                localStorage.getItem('email')?`
+    <div class="input-group">
+      <!-- Botón de decremento -->
+      <button class="btn btn-outline-secondary" type="button" onclick="decrementStock()">-</button>
+      
+      <!-- Input para el stock -->
+      <input type="number" id="stock" class="form-control text-center" value="1" min="0" readonly>
+      
+      <!-- Botón de incremento -->
+      <button class="btn btn-outline-secondary" type="button" onclick="incrementStock()">+</button>
+    </div>
+    <button class ="btn btn-success btnProducto" onclick="addItems()">Comprar</button>
+`
+                : `<button class ="btn btn-success btnProducto">Ingrese sesion para comprar</button>`
+              }
         </div>
         </div>
         `
+        let contenedor = document.querySelector("main");
+        contenedor.innerHTML=html;
+}
+const counter = document.querySelector("#stock");
+
+function incrementStock() {
+    if (Number(producto.stock)>counter.value) {
+        counter.value = Number(counter.value)+1;
+    }
+}
+function decrementStock() {
+    if(counter.value>1){
+        counter.value = Number(counter.value)-1;
+    }
+}
+
+function addItems() {
+    const cart = JSON.parse(localStorage.getItem("cart"));
+    cart.push({id:idProducto,quantity:counter.value});
+    localStorage.setItem("cart",JSON.stringify(cart));
+    let quantity = cart.reduce((acumulado,actual)=>acumulado+Number(actual.quantity),0);
+    localStorage.setItem("quantity",quantity);
+    let quant = document.querySelector("#quantity");
+    quant.innerText = quantity;
 }
 
 
 
-
-let contenedor = document.querySelector(".cards-productos");
-
-
-contenedor.innerHTML=html;
 
 

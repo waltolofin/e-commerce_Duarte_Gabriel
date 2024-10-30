@@ -1,7 +1,19 @@
 
   let h1 = document.querySelector("h1");
   h1.innerHTML = "Productos";
+
+
+let buscador = `<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="input-value">
+<button class="btn btn-outline-secondary" id="clear-button" type="button">
+<i class="bi bi-x-circle icono1"></i></button>
+<button class="btn btn-outline-success" id="filter-button" type="button">Search</button>
+`;
+let form = document.querySelector(".form-index");
+form.innerHTML=buscador;
+
+
   let contenedor = document.querySelector(".container");
+
 //Usamos cada uno de los objetos de data para armar cards en el html
 function mapear(objmapear) {
     let card = objmapear.map((car)=>`<div class="card" id="${car.id}" >
