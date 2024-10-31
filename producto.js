@@ -56,7 +56,12 @@ function decrementStock() {
 
 function addItems() {
     const cart = JSON.parse(localStorage.getItem("cart"));
-    cart.push({id:idProducto,quantity:counter.value});
+    const productoExistente = cart.find(item => item.id === idProducto);
+    if (productoExistente) {
+        productoExistente.quantity += Number(counter.value);
+    }else{
+        cart.push({id:idProducto,quantity:Number(counter.value)});
+    }
     localStorage.setItem("cart",JSON.stringify(cart));
     let quantity = cart.reduce((acumulado,actual)=>acumulado+Number(actual.quantity),0);
     localStorage.setItem("quantity",quantity);
