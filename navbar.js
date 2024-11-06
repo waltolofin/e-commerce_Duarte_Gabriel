@@ -52,10 +52,14 @@ let nav = `<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="
               </ul>
             </li>
           </ul>
-          <ul class='navbar-nav session'>${
-            localStorage.getItem('email')?`<li class="email-li" id="li-nav">Bienvenido ${localStorage.getItem('email').split('@')[0]}</li><li id="li-nav"><img height="25" src="./cart.png" alt="comprar"><b id=quantity>${localStorage.getItem("quantity")}</b></li><li id="li-nav" onclick="logout()" class="logout-li">Cerrar sesión</li>`
-            : `<li><a class="nav-link" href="./login.html">Iniciar sesión</a></li>`
-          }</ul>
+          <ul class='navbar-nav session'>${localStorage.getItem('email')
+    ? `<li class="email-li" id="li-nav">Bienvenido ${localStorage.getItem('email').split('@')[0]}</li>
+       <span>|</span>
+       <li id="li-nav"><a href="cart.html" id="cart-link"><img height="25" src="./cart.png" alt="comprar"><b id="quantity">${localStorage.getItem("quantity")}</b></a></li>
+       <span>|</span>
+       <li id="li-nav" onclick="logout()" class="logout-li">Cerrar sesión</li>`
+    : `<li><a class="nav-link" href="./login.html">Iniciar sesión</a></li>`}
+</ul>
         </div>
       </div>
     </nav>`;

@@ -13,7 +13,7 @@
 
 .email-li{
     margin-right: 25px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     background-image: linear-gradient(to right, #FF7F50, #D4AF37);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -26,5 +26,10 @@
 }
 
 #li-nav{
-    margin-right: 15px;
+    margin: 0 15px 0 15px;
+}
+
+#cart-link{
+    color: #fff;
+    text-decoration: none;
 }

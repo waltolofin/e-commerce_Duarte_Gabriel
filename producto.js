@@ -1,6 +1,6 @@
 
 
-let idProducto = window.location.search.split("=")[1];
+let idProducto = Number(window.location.search.split("=")[1]);
 
 const producto = data.find((product)=>product.id==idProducto);
 
@@ -55,12 +55,13 @@ function decrementStock() {
 }
 
 function addItems() {
-    const cart = JSON.parse(localStorage.getItem("cart"));
-    const productoExistente = cart.find(item => item.id === idProducto);
+    let cart = JSON.parse(localStorage.getItem("cart"));
+
+    const productoExistente = cart.find(item => Number(item.product.id) === idProducto);
     if (productoExistente) {
         productoExistente.quantity += Number(counter.value);
     }else{
-        cart.push({id:idProducto,quantity:Number(counter.value)});
+        cart.push({product:producto,quantity:Number(counter.value)});
     }
     localStorage.setItem("cart",JSON.stringify(cart));
     let quantity = cart.reduce((acumulado,actual)=>acumulado+Number(actual.quantity),0);
