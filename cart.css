@@ -10,3 +10,12 @@
   #cart .card .me-4 img {
       width: 100%;
   }
+
+#eli-prod:hover{
+    cursor: pointer;
+    color: #f00;
+}
+
+#container{
+    width: max-conten;
+}

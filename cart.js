@@ -1,4 +1,5 @@
 const cardsSection = document.querySelector("#cart #cards")
+const boton = document.querySelector(".borrar_carrito");
 
 function getCart(cards) {
     const list = cards.map(
@@ -31,7 +32,7 @@ function getCart(cards) {
                             </div>
                             <div class="col-md-2">
                                 <div class="mt-3">
-                                    <p class="text-muted mb-2" onclick="removeItem(${card.product.id})">Eliminar</p>
+                                    <p id="eli-prod" onclick="removeitem(${card.product.id})">Eliminar</p>
                                 </div>
                             </div>
                         </div>
@@ -43,4 +44,32 @@ function getCart(cards) {
     cardsSection.innerHTML = list.join("")
 }
 
+const total = (cards) =>{
+    let cartTotal = document.querySelector(".cart-total");
+    let total = cards.reduce((acumulado,actual)=>acumulado + actual.product.price * actual.quantity,0);
+    cartTotal.innerHTML= "$" + total;
+}
+
+const removeitem=(id)=>{
+    const cards = JSON.parse(localStorage.getItem("cart"));
+    const newCards = cards.filter(card=>card.product.id !== id)
+    localStorage.setItem("cart",JSON.stringify(newCards));
+    getCart(newCards);
+    total(newCards);
+
+    let quantity = newCards.reduce((acumulado,actual)=>acumulado+actual.quantity,0);
+    localStorage.setItem("quantity",quantity);
+    let quantityTag = document.querySelector("#quantity");
+    quantityTag.innerHTML = quantity;
+}
+
+const clearCart=()=>{
+    let quantityTag = document.querySelector("#quantity");
+    quantityTag.innerText="0";
+    localStorage.setItem("cart",JSON.stringify([]))
+    getCart([]);
+    total(0);
+}
+
 getCart(JSON.parse(localStorage.getItem("cart")))
+total(JSON.parse(localStorage.getItem("cart")))
