@@ -71,5 +71,11 @@ const clearCart=()=>{
     total(0);
 }
 
+const sesion =()=>{
+    if(!localStorage.getItem("gmail")){
+        window.location.href = "./index.html";
+    }
+}
+
 getCart(JSON.parse(localStorage.getItem("cart")))
 total(JSON.parse(localStorage.getItem("cart")))
