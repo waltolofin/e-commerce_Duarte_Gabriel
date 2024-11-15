@@ -153,3 +153,22 @@ h1{
 .precio{
     color: rgb(35, 172, 35);
 }
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#ea52f8, #0066ff);
+    z-index: 9999;
+}
+
+.spinner-custom {
+    color:#fff;
+    width: 4rem;
+    height: 4rem;
+}

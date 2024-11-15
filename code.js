@@ -12,7 +12,7 @@ let form = document.querySelector(".form-index");
 form.innerHTML=buscador;
 
 
-  let contenedor = document.querySelector(".container");
+let contenedor = document.querySelector(".container");
 
 //Usamos cada uno de los objetos de data para armar cards en el html
 function mapear(objmapear) {
@@ -35,7 +35,6 @@ function mapear(objmapear) {
 </div>`);
 contenedor.innerHTML = card.join('');
   }
-mapear(data);
 
 //Seleccionamos los botones y imputs necesarios
 let filterButton = document.getElementById("filter-button");
@@ -76,7 +75,16 @@ for (const i of arrCategoria) {
   i.addEventListener("click", () => verSneakers(i.textContent.toLowerCase()));
 } 
 
+const promesa = new Promise((res, rej) => {
+  setTimeout(() => {
+    res();
+  }, 2000);
+});
 
+promesa.then(() => {
+  document.getElementById("loading-screen").style.display = "none";
+  mapear(data);
+});
 
 
 
