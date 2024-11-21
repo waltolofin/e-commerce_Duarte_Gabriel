@@ -16,7 +16,7 @@ let contenedor = document.querySelector(".container");
 
 //Usamos cada uno de los objetos de data para armar cards en el html
 function mapear(objmapear) {
-    let card = objmapear.map((car)=>`<div class="card" id="${car.id}" >
+    let card = objmapear.map((car)=>`<div class="card" id="${car.id}">
     <a href="producto.html?prod=${car.id}" class="cardRef">
   <div class="img-container">
   <img src="${car.img}" class="card-img-top" alt="${car.title}">
@@ -78,7 +78,7 @@ for (const i of arrCategoria) {
 const promesa = new Promise((res, rej) => {
   setTimeout(() => {
     res();
-  }, 2000);
+  }, 1500);
 });
 
 promesa.then(() => {

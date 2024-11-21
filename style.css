@@ -1,3 +1,12 @@
+:root {
+    --negro: #000000;
+    --amarillo-intenso: #FFD700;
+    --gris-oscuro: #333333;
+    --blanco: #FFFFFF;
+    --gris-claro: #CCCCCC;
+    --amarillo-suave: #FFF9C4;
+}
+
 body{
     box-sizing: border-box;
     padding: 0;
@@ -15,9 +24,9 @@ body{
 }
 /*Main*/
 main{
-    width: fit-content;
     margin: auto;
     min-height: calc(100vh - 120px);
+    background-color: var(--gris-oscuro);
 }
 
 /*Cards styles*/
@@ -76,6 +85,7 @@ main{
 h1{
     text-align: center;
     margin: 10px;
+    color: var(--amarillo-intenso) !important;
 }
 
 /*Media queries*/
@@ -163,12 +173,12 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right,#ea52f8, #0066ff);
+    background: var(--gris-oscuro);
     z-index: 9999;
 }
 
 .spinner-custom {
-    color:#fff;
+    color:var(--amarillo-intenso);
     width: 4rem;
     height: 4rem;
 }

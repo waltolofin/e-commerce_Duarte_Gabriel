@@ -79,3 +79,57 @@ const sesion =()=>{
 
 getCart(JSON.parse(localStorage.getItem("cart")))
 total(JSON.parse(localStorage.getItem("cart")))
+function checkout() {
+    // Recuperar los datos del localStorage
+    const user = localStorage.getItem("email");
+    const cart = localStorage.getItem("cart");
+  
+    // Validar que los datos sean válidos
+    if (!user || !cart) {
+      Swal.fire({
+        icon: "error",
+        text: "No hay datos suficientes para procesar el pedido. Por favor, verifica tu cuenta y carrito.",
+        confirmButtonText: "Okay",
+        confirmButtonColor: "#06f",
+      });
+      return; // Detener la ejecución si faltan datos
+    }
+  
+    const recurso = {
+      user,
+      items: JSON.parse(cart),
+    };
+  
+    // Enviar la solicitud al servidor
+    fetch("https://673d09dd4db5a341d833d038.mockapi.io/orders", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json", // Aseguramos que el contenido se envíe como JSON
+      },
+      body: JSON.stringify(recurso),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Error en la solicitud");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        Swal.fire({
+          icon: "success", // Ícono de éxito
+          text: `Gracias ${recurso.user}. Hemos registrado tu orden número #${data.id}`,
+          confirmButtonText: "Okay",
+          confirmButtonColor: "#06f",
+        });
+        localStorage.setItem("cart", JSON.stringify([]));
+        localStorage.setItem("quantity", "0");
+      })
+      .catch(() =>
+        Swal.fire({
+          icon: "error", // Ícono de error
+          text: "Ups, hubo un problema. Por favor, inténtalo más tarde.",
+          confirmButtonText: "Okay",
+          confirmButtonColor: "#06f",
+        })
+      );
+  }

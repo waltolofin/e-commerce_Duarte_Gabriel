@@ -1,3 +1,11 @@
+:root {
+    --negro: #000000;
+    --amarillo-intenso: #FFD700;
+    --gris-oscuro: #333333;
+    --blanco: #FFFFFF;
+    --gris-claro: #CCCCCC;
+    --amarillo-suave: #FFF9C4;
+}
 .session{
     color:#fff;
     display: flex;
@@ -32,4 +40,8 @@
 #cart-link{
     color: #fff;
     text-decoration: none;
+}
+
+#navbar{
+    background-color: var(--gris-oscuro)!important;
 }

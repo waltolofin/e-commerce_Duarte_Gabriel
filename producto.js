@@ -33,7 +33,7 @@ if (producto) {
     </div>
     <button class ="btn btn-success btnProducto" onclick="addItems()">Comprar</button>
 `
-                : `<button class ="btn btn-success btnProducto">Ingrese sesion para comprar</button>`
+                : `<a href="./login.html" class ="btn btn-success btnProducto">Ingrese sesion para comprar</a>`
               }
         </div>
         </div>

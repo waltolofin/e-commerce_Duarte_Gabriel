@@ -1,44 +1,77 @@
+:root {
+  --negro: #000000;
+  --amarillo-intenso: #FFD700;
+  --gris-oscuro: #333333;
+  --blanco: #FFFFFF;
+  --gris-claro: #CCCCCC;
+  --amarillo-suave: #FFF9C4;
+}
+
 body {
     display: grid;
     place-items: center;
     height: 100dvh;
+    background: rgb(58,57,49);
+background: var(--gris-oscuro);
    }
 
+h3{
+  text-align: center;
+}
+
    .card{
-    position: relative;
     padding: 20px;
-    min-width: 300px;
-    min-height: 450px;
-   }
-   .card::after{
-    content: "\f2bb"; /* Código del icono (puede variar según el icono) */
-    position: absolute;
-    display: block;
-    top: 5px; /* Ajusta la posición vertical */
-    right: 5px; /* Ajusta la posición horizontal */
-    font-family: 'Material Icons';
-    font-size: 24px; /* Ajusta el tamaño del icono */
+    min-width: 450px;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ffd9002e;
    }
 
    .error-container{
     display: none;
-    color: #f00;
+    color: var(--amarillo-suave);
     font-weight: bold;
     font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
    }
 
+   #input:hover{
+    border-color: var(--amarillo-intenso);
+    outline: var(--amarillo-intenso);
+   }
 
-   .material-symbols-outlined {
-    font-size: 5em;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-  }
+   #input:focus {
+    outline: none;
+    border: none;
+    border: 1px solid var(--amarillo-intenso);
+    box-shadow: none;
+}
+
+#error{
+  width: 2.5em;
+  height: 2.5em;
+}
 
 
 #submit-button{
     width: 100%;
+    background-color: var(--amarillo-intenso);
+    color: var(--gris-oscuro);
+    font-weight: bolder;
+    border: none;
   }
 
+  #submit-button:hover{
+    background-color: #ffd900ae;
+  }
+
+.person{
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid #d2d2d2;
+  background-color: #fff;
+}
