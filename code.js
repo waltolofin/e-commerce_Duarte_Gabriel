@@ -1,6 +1,6 @@
 
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = "Productos";
+  let h2 = document.querySelector("h1");
+  h2.innerHTML = "Productos";
 
 
 let buscador = `<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="input-value">

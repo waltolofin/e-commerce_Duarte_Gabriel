@@ -11,9 +11,23 @@
       width: 100%;
   }
 
+.ir-inicio{
+    text-decoration: underline;
+    color: #000;
+    font-weight: bolder;
+}
+
+.ir-inicio:hover{
+    color: #444;
+}
+
 #container{
     margin: 25px;
     padding: 10px;
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #cart{
