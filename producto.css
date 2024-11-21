@@ -1,3 +1,12 @@
+:root {
+    --negro: #000000;
+    --amarillo-intenso: #FFD700;
+    --gris-oscuro: #333333;
+    --blanco: #FFFFFF;
+    --gris-claro: #CCCCCC;
+    --amarillo-suave: #FFF9C4;
+}
+
 body{
     min-height: 100vh;
     display: flex;
@@ -12,6 +21,7 @@ main{
     justify-content: center;
     align-items: center;
     flex: 1;
+    background-color: var(--gris-oscuro);
     }
     
     .texto h2 {

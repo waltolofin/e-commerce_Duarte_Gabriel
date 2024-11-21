@@ -11,6 +11,15 @@
       width: 100%;
   }
 
+#container{
+    margin: 25px;
+    padding: 10px;
+}
+
+#cart{
+    background-color: #333333;
+}
+
 #eli-prod:hover{
     cursor: pointer;
     color: #f00;

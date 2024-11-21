@@ -27,6 +27,7 @@ main{
     margin: auto;
     min-height: calc(100vh - 120px);
     background-color: var(--gris-oscuro);
+    padding: 50px;
 }
 
 /*Cards styles*/
