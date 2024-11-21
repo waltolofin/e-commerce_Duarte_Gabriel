@@ -1,9 +1,9 @@
 
-  let h2 = document.querySelector("h1");
-  h2.innerHTML = "Productos";
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = "Productos";
 
 
-let buscador = `<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="input-value">
+let buscador = `<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="input-value buscador">
 <button class="btn btn-outline-secondary" id="clear-button" type="button">
 <i class="bi bi-x-circle icono1"></i></button>
 <button class="btn btn-outline-success" id="filter-button" type="button">Search</button>
